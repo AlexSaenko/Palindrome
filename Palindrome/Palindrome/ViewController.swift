@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let network = Network()
+        network.getIdeas()
         // Do any additional setup after loading the view.
     }
 
