@@ -35,12 +35,13 @@ class IdeasListViewController: UIViewController {
 
 extension IdeasListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return list.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = UITableViewCell()
+        let idea = list[indexPath.row]
+        cell.textLabel?.text = idea.text
+        return cell
     }
-    
-    
 }
