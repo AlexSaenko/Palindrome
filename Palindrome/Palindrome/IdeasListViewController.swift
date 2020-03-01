@@ -17,6 +17,8 @@ extension IdeasListViewController {
 
 class IdeasListViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     var list: [Idea] = [
         Idea(text: "idea1"),
         Idea(text: "idea2"),
@@ -25,9 +27,20 @@ class IdeasListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
     }
 
 
 }
 
+extension IdeasListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+}
