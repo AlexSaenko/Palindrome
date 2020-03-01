@@ -16,6 +16,7 @@ extension IdeasListViewController {
 }
 
 class IdeasListViewController: UIViewController {
+     let network = Network()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -28,6 +29,7 @@ class IdeasListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        network.getIdeas { ideas in print(ideas) }
     }
 
 
