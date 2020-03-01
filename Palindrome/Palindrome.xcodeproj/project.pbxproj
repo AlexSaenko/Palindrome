@@ -13,6 +13,8 @@
 		5928B2F2240BCE1900C9CCF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5928B2F0240BCE1900C9CCF1 /* Main.storyboard */; };
 		5928B2F4240BCE1B00C9CCF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5928B2F3240BCE1B00C9CCF1 /* Assets.xcassets */; };
 		5928B2F7240BCE1B00C9CCF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5928B2F5240BCE1B00C9CCF1 /* LaunchScreen.storyboard */; };
+		5928B2FF240BD8A700C9CCF1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5928B2FE240BD8A700C9CCF1 /* Network.swift */; };
+		5928B301240BEDDD00C9CCF1 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5928B300240BEDDD00C9CCF1 /* Idea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5928B2F3240BCE1B00C9CCF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5928B2F6240BCE1B00C9CCF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5928B2F8240BCE1B00C9CCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5928B2FE240BD8A700C9CCF1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5928B300240BEDDD00C9CCF1 /* Idea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				5928B2F3240BCE1B00C9CCF1 /* Assets.xcassets */,
 				5928B2F5240BCE1B00C9CCF1 /* LaunchScreen.storyboard */,
 				5928B2F8240BCE1B00C9CCF1 /* Info.plist */,
+				5928B2FE240BD8A700C9CCF1 /* Network.swift */,
+				5928B300240BEDDD00C9CCF1 /* Idea.swift */,
 			);
 			path = Palindrome;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				5928B2EF240BCE1900C9CCF1 /* IdeasListViewController.swift in Sources */,
 				5928B2EB240BCE1900C9CCF1 /* AppDelegate.swift in Sources */,
+				5928B301240BEDDD00C9CCF1 /* Idea.swift in Sources */,
+				5928B2FF240BD8A700C9CCF1 /* Network.swift in Sources */,
 				5928B2ED240BCE1900C9CCF1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

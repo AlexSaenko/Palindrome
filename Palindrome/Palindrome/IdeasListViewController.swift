@@ -16,20 +16,27 @@ extension IdeasListViewController {
 }
 
 class IdeasListViewController: UIViewController {
+     let network = Network()
     
     @IBOutlet weak var tableView: UITableView!
     
-    var list: [Idea] = [
-        Idea(text: "idea1"),
-        Idea(text: "idea2"),
-        Idea(text: "idea3")
-    ]
+    var list: [Idea] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        network.getIdeas { ideas in
+            self.list = ideas.map({ (idea) -> IdeasListViewController.Idea in
+                return IdeasListViewController.Idea(text: idea.title)
+            })
+        }
     }
-
 
 }
 
