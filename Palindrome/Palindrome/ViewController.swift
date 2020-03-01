@@ -10,13 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let network = Network()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        let network = Network()
-        network.getIdeas()
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()   
+        network.getIdeas { ideas in print(ideas) }
     }
-
-
 }
 
