@@ -8,8 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// model
+extension IdeasListViewController {
+    struct Idea {
+        let text: String
+    }
+}
 
+class IdeasListViewController: UIViewController {
+    
+    var list: [Idea] = [
+        Idea(text: "idea1"),
+        Idea(text: "idea2"),
+        Idea(text: "idea3")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
